@@ -10,7 +10,7 @@ nav{
     flex-basis: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 /* REGOLA LINEA DIVISORIA FOOTER */
 hr{
@@ -71,9 +71,9 @@ header{
     width: 120px;
 }
 .links{
-    flex-basis: auto;
+    flex-basis: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap:wrap; 
 }
 
@@ -82,7 +82,12 @@ header{
     justify-content: flex-end;
     flex-basis: 25%;
 }
-
+#login button,
+#footer_button button{
+    font-size: 12px;
+    padding: 8px 10px ;
+    border-radius: 15px;
+}
 
 #container_logo_header{
     margin-top:40px ;
@@ -100,7 +105,7 @@ header{
     text-align: center;
     padding-top: 35px;
     width: 50%;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 
 }
 #text_logo_header h1{
@@ -108,7 +113,8 @@ header{
     color: white;
 }
 #text_logo_header p{
-    padding-top: 20px;
+    padding-top: 40px;
+    line-height: 25px;
     color: white;
 }
 
@@ -128,17 +134,37 @@ header{
     background-color: #23272a;
     color: white;
 }
+button::before{
+    content: "\2193";
+    padding:5px ;
+    vertical-align: top;
+    padding-top: 2px; 
+}
+.black.button::before,
+#login button::before{
+    display: none;
+}
+#footer_button button::before{
+    display: none;
+}
 .button{
     color: black;
-    font-size: 12px;
-    padding: 8px 10px ;
-    border-radius: 15px;
+    font-size: 15px;
+    padding: 13px 20px ;
+    border-radius: 20px;
     border: none;
-    background-color: #ffffff ;
     cursor: pointer;
+}
+.white{
+    background-color: #ffffff ;
+    font-size: 15px;
+    padding: 12px 15px ;
+    border-radius: 20px;
 }
 .black{
     background-color: #23272a;
+    padding: 14px 25px;
+    border-radius: 25px;
     color: white;
 }
 
@@ -151,6 +177,7 @@ header{
 /* INIZIO MAIN */
 .container_main_section_bg{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -223,6 +250,15 @@ button.violet.button{
     background-color:#f6f6f6;
 }
 /* FINE CLASSE BG GRIGIO */
+
+
+.wave{
+    filter: invert(100%) sepia(50%) saturate(37%) hue-rotate(185deg) brightness(113%) contrast(93%);
+    display: block;
+}
+.reverse{
+    transform: rotate(180deg)
+}
 
 
 /* SELETTORE AVANZATO PER SPOSTARE ORDINE DEL BOX TESTO NEL MAIN */
