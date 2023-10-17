@@ -32,6 +32,9 @@ li{
     list-style: none;
     margin: 0px 10px;
 }
+li a{
+    color: white;
+}
 
 /* FINE REGOLE GENERALI */
 
@@ -40,31 +43,37 @@ li{
 /* PARTE HEADER */
 
 #intestazione{
-    background-color: #add8e6;
-    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #3161e0;
     
 }
+header{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #3161e0;
+}
 .container_nav{
-    background-color: #daa520 ;
+    background-color: #3161e0;
+    height: 70px;
+    padding-top: 20px;
     flex-basis: 70%;
-    align-items: center;
+    /* align-items: center; */
+    justify-content: space-between;
     display: flex;
-    border: 2px dashed black;
 }
 
 #logo{
-    padding-left: 10px;
+    width: 50%;
     flex-basis: 25%;
-    border-right: 2px dashed black;
+}
+#logo img{
+    padding-top: 10px;
+    width: 120px;
 }
 #links{
     flex-basis: 50%;
-    justify-content: center;
-    border-right: 2px dashed black;
-    border-left: 2px dashed black;
 }
 
 #login{
@@ -72,22 +81,56 @@ li{
     justify-content: flex-end;
     padding-right: 10px;
     flex-basis: 25%;
-    border-left: 2px dashed black;
 }
 
 #container_logo_header{
+    background-image: url(../img/jumbo.png);
+    background-size: 100% ;
+    background-repeat: no-repeat;
     display: flex;
-    background-color: #00008b;
     align-items: center;
     justify-content: center;
-    height: 400px;
 }
 
-#logo_header{
+#text_logo_header{
+    padding-top: 40px;
     width: 50%;
     height: 300px;
-    background-color: #ee82ee;
-    border: 2px dashed black;
+    padding-bottom: 20px;
+
+}
+#text_logo_header p{
+    color: white;
+}
+
+#button_text_logo_header{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#button_text_logo_header a{
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.black{
+    background-color: #23272a;
+    color: white;
+}
+.button{
+    color: black;
+    font-size: 12px;
+    padding: 8px 10px ;
+    border-radius: 15px;
+    border: none;
+    background-color: #ffffff ;
+    cursor: pointer;
+}
+.black{
+    background-color: #23272a;
+    color: white;
 }
 
 /* FINE HEADER */
@@ -105,18 +148,26 @@ li{
     align-items: center;
 }
 .text_box{
-    background-color: #ffc0cb;
     width: 40%;
-    height: 300px;
-    border: 2px dashed black;
+    padding-left: 30px;
+}
+.text_box h2{
+    font-size: 25px;
+    line-height: 150%;
+}
+.text_box p{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.img_box{
+    width: 70%;
+    /* height: 300px; */
 
 }
-.img_box{
-    border: 2px dashed black;
-    background-color: #1e90ff;
-    width: 70%;
-    height: 300px;
 
+.img_box img{
+    width: 100%;
 }
 .big_box_main{
     border: 2px dashed black;
