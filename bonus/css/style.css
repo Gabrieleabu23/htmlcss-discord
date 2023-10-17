@@ -96,10 +96,12 @@ header{
     background-size: cover;
     background-position-x: left;
     background-position-y: 22%;
+    padding: 3% 0%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 
 #text_logo_header{
     text-align: center;
@@ -123,6 +125,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 #button_text_logo_header a{
     margin: 0px 10px;
@@ -163,7 +166,7 @@ button::before{
 }
 .black{
     background-color: #23272a;
-    padding: 14px 25px;
+    padding: 13px 25px;
     border-radius: 25px;
     color: white;
 }
@@ -225,16 +228,17 @@ button::before{
 .big_box_main img{
     width: 100%;
 }
-.text_big_box_main{
+ .text_big_box_main{
     margin-top: 20px;
     background-image: url(../img/stars.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    padding: 20px;
+    padding: 30px;
+    font-size: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} 
 button.violet.button{
     margin-top: 20px;
 }
@@ -254,9 +258,12 @@ button.violet.button{
 .wave{
     filter: invert(100%) sepia(50%) saturate(37%) hue-rotate(185deg) brightness(113%) contrast(93%);
     display: block;
+    margin-top: 50px;
 }
 .reverse{
-    transform: rotate(180deg)
+    transform: rotate(180deg);
+    margin-top: 0px;
+    margin-bottom: 50px;
 }
 
 
