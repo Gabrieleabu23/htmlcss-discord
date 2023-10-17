@@ -1,0 +1,197 @@
+/* REGOLE GENERICHE */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Whitney', sans-serif;
+}
+/* PARTE DI NAVIGAZIONE IN ALTO */
+nav{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* REGOLA LINEA DIVISORIA FOOTER */
+hr{
+    /* background-color: #c0c1c2; */
+    border: 1px solid #c0c1c2;
+}
+/* REGOLA PER I COLLEGAMENTI ESTERNI(ANCORE) */
+a{
+    text-decoration: none;
+    color: black;
+}
+/* REGOLA DELLA LISTA NON ORDINATA */
+ul{
+    display: flex;
+    margin: 0px ;
+}
+li{
+    list-style: none;
+    margin: 0px 10px;
+}
+
+/* FINE REGOLE GENERALI */
+
+/* INIZIO REGOLE CON CLASSE E ID */
+
+/* PARTE HEADER */
+
+#intestazione{
+    background-color: #add8e6;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container_nav{
+    background-color: #daa520 ;
+    flex-basis: 70%;
+    align-items: center;
+    display: flex;
+    border: 2px dashed black;
+}
+
+#logo{
+    padding-left: 10px;
+    flex-basis: 25%;
+    border-right: 2px dashed black;
+}
+#links{
+    flex-basis: 50%;
+    justify-content: center;
+    border-right: 2px dashed black;
+    border-left: 2px dashed black;
+}
+
+#login{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    flex-basis: 25%;
+    border-left: 2px dashed black;
+}
+
+#container_logo_header{
+    display: flex;
+    background-color: #00008b;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+
+#logo_header{
+    width: 50%;
+    height: 300px;
+    background-color: #ee82ee;
+    border: 2px dashed black;
+}
+
+/* FINE HEADER */
+
+/* INIZIO MAIN */
+.container_main_section_bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container_main_section{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text_box{
+    background-color: #ffc0cb;
+    width: 40%;
+    height: 300px;
+    border: 2px dashed black;
+
+}
+.img_box{
+    border: 2px dashed black;
+    background-color: #1e90ff;
+    width: 70%;
+    height: 300px;
+
+}
+.big_box_main{
+    border: 2px dashed black;
+    background-color: #228b22;
+    width: 100%;
+    height: 500px;
+
+}
+.img_box,
+.text_box,
+.big_box_main{
+    margin: 40px 0px;
+}
+
+/* INIZIO CLASSE BG GRIGIO */
+.gray{
+    background-color:#d3d3d3;
+}
+/* FINE CLASSE BG GRIGIO */
+
+
+/* SELETTORE AVANZATO PER SPOSTARE ORDINE DEL BOX TESTO NEL MAIN */
+.container_main_section_bg.gray > .container_main_section >.text_box{
+    order:-1;
+}
+
+/* FINE MAIN */
+
+/* INIZIO FOOTER */
+.col_footer{
+    padding-top: 10px;
+    width: 100%;
+    background-color: #23272a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+
+#col_pink{
+    background-color: #f08080;
+    height: 300px;
+    width: 40%;
+    border: 1px dashed black;
+}
+.blu_col_footer{
+    height: 300px;
+    width: 20%;
+    background-color: #20b2aa;
+    border: 1px dashed white;
+}
+#footer_top{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: #23272a ;
+}
+#footer_end{
+    margin: 15px 0px;
+    background-color:#7fffd4 ;
+    width: 70%;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+#footer_logo,
+#footer_button{
+    background-color: #ffb6c1;
+    border: 2px dashed black;
+    padding: 2px 5px;
+}
+
+/* FINE FOOTER */
+
+
+
