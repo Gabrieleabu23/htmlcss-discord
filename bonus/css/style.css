@@ -1,0 +1,362 @@
+/* REGOLE GENERICHE */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Whitney', sans-serif;
+}
+/* PARTE DI NAVIGAZIONE IN ALTO */
+nav{
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* REGOLA LINEA DIVISORIA FOOTER */
+hr{
+    /* background-color: #c0c1c2; */
+    border: 1px solid #c0c1c2;
+}
+/* REGOLA PER I COLLEGAMENTI ESTERNI(ANCORE) */
+a{
+    text-decoration: none;
+    color: black;
+}
+/* REGOLA DELLA LISTA NON ORDINATA */
+ul{
+    display: flex;
+    margin: 0px ;
+}
+
+.links li{
+    list-style: none;
+    margin: 0px 10px;
+}
+li a{
+    color: white;
+}
+
+/* FINE REGOLE GENERALI */
+
+/* INIZIO REGOLE CON CLASSE E ID */
+
+/* PARTE HEADER */
+
+#intestazione{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3161e0;
+    flex-basis: 100%;
+    
+}
+
+header{
+    background-color: #3161e0;
+    width: 100%;
+}
+.container_nav{
+    background-color: #3161e0;
+    padding-top: 20px;
+    flex-basis: 70%;
+    display: flex;
+}
+
+#logo{
+    flex-basis: 25%;
+}
+#logo,
+#footer_logo img{
+    padding-top: 10px;
+    width: 120px;
+}
+.links{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap; 
+}
+
+#login{
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 25%;
+}
+#login button,
+#footer_button button{
+    font-size: 12px;
+    padding: 8px 10px ;
+    border-radius: 15px;
+}
+
+#container_logo_header{
+    margin-top:40px ;
+    /* padding-top: 30px; */
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-position-x: left;
+    background-position-y: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#text_logo_header{
+    text-align: center;
+    padding-top: 35px;
+    width: 50%;
+    padding-bottom: 100px;
+
+}
+#text_logo_header h1{
+    font-size: 40px;
+    color: white;
+}
+#text_logo_header p{
+    padding-top: 40px;
+    line-height: 25px;
+    color: white;
+}
+
+#button_text_logo_header{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#button_text_logo_header a{
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.black{
+    background-color: #23272a;
+    color: white;
+}
+button::before{
+    content: "\2193";
+    padding:5px ;
+    vertical-align: top;
+    padding-top: 2px; 
+}
+.black.button::before,
+#login button::before{
+    display: none;
+}
+#footer_button button::before{
+    display: none;
+}
+.button{
+    color: black;
+    font-size: 15px;
+    padding: 13px 20px ;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+.white{
+    background-color: #ffffff ;
+    font-size: 15px;
+    padding: 12px 15px ;
+    border-radius: 20px;
+}
+.black{
+    background-color: #23272a;
+    padding: 14px 25px;
+    border-radius: 25px;
+    color: white;
+}
+
+.violet{
+    background-color: #8ea1e1;
+    color: white;
+}
+/* FINE HEADER */
+
+/* INIZIO MAIN */
+.container_main_section_bg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    flex-basis: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text_box{
+    flex-basis: 40%;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+.text_box h2{
+    font-size: 25px;
+    line-height: 30px;
+}
+.text_box p{
+    padding-top: 10px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.img_box{
+    width: 70%;
+    /* height: 300px; */
+
+}
+
+.img_box img{
+    width: 100%;
+}
+.big_box_main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.big_box_main p{
+    padding: 20px 30px;
+    line-height: 25px;
+    text-align: center;
+}
+.big_box_main img{
+    width: 100%;
+}
+.text_big_box_main{
+    margin-top: 20px;
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button.violet.button{
+    margin-top: 20px;
+}
+.img_box,
+.text_box,
+.big_box_main{
+    margin: 40px 0px;
+}
+
+/* INIZIO CLASSE BG GRIGIO */
+.gray{
+    background-color:#f6f6f6;
+}
+/* FINE CLASSE BG GRIGIO */
+
+
+.wave{
+    filter: invert(100%) sepia(50%) saturate(37%) hue-rotate(185deg) brightness(113%) contrast(93%);
+    display: block;
+}
+.reverse{
+    transform: rotate(180deg)
+}
+
+
+/* SELETTORE AVANZATO PER SPOSTARE ORDINE DEL BOX TESTO NEL MAIN */
+.container_main_section_bg.gray > .container_section.main >.text_box{
+    order:-1;
+}
+
+/* FINE MAIN */
+
+/* INIZIO FOOTER */
+
+.col_footer{
+    padding-top: 10px;
+    width: 100%;
+    background-color: #23272a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.container_section{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin-top: 40px;
+}
+
+#col_pink li,
+.blu_col_footer li{
+    list-style: none;
+    margin-top: 10px;
+    padding-right: 20px;
+}
+
+select{
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+#col_pink span{
+    color: white;
+    font-size: 12px;
+}
+#col_pink span img{
+    width: 20px;
+    padding-right: 5px;
+}
+#col_pink h3{
+    color: #7289da;
+    margin-bottom: 10px;
+}
+#col_pink{
+    /* background-color: #f08080; */
+    width: 40%;
+    color: white;
+}
+.blu_col_footer{
+    width: 20%;
+}
+h6{
+    color:#7289da;
+}
+.blu_col_footer ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 12px;
+}
+#footer_top{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: #23272a ;
+}
+#footer_end{
+    border-top: 1px solid #c0c1c2;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin: 15px 0px;
+    width: 70%;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-bottom: 40px; */
+}
+#footer_logo,
+#footer_button{
+    padding: 2px 5px;
+    
+}
+
+/* FINE FOOTER */
+
+
+
