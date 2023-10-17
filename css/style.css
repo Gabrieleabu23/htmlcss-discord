@@ -65,11 +65,12 @@ header{
     display: flex;
 }
 
-#logo{
+.logo{
     width: 50%;
     flex-basis: 25%;
 }
-#logo img{
+#logo,
+#footer_logo img{
     padding-top: 10px;
     width: 120px;
 }
@@ -292,19 +293,21 @@ h6{
     background-color: #23272a ;
 }
 #footer_end{
+    border-top: 1px solid #c0c1c2;
+    padding-top: 40px;
+    padding-bottom: 60px;
     margin: 15px 0px;
-    background-color:#7fffd4 ;
     width: 70%;
     display: flex;
     height: 40px;
     align-items: center;
     justify-content: space-between;
+    /* padding-bottom: 40px; */
 }
 #footer_logo,
 #footer_button{
-    background-color: #ffb6c1;
-    border: 2px dashed black;
     padding: 2px 5px;
+    
 }
 
 /* FINE FOOTER */
