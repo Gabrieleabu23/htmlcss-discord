@@ -83,11 +83,14 @@ header{
     flex-basis: 25%;
 }
 
-header > #container_logo_header{
+
+#container_logo_header{
+    margin-top:40px ;
+    /* padding-top: 30px; */
     background-image: url(../img/jumbo.png);
     background-size: cover;
-}
-#container_logo_header{
+    background-position-x: left;
+    background-position-y: 22%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -95,13 +98,17 @@ header > #container_logo_header{
 
 #text_logo_header{
     text-align: center;
-    padding-top: 40px;
+    padding-top: 35px;
     width: 50%;
-    height: 300px;
     padding-bottom: 50px;
 
 }
+#text_logo_header h1{
+    font-size: 40px;
+    color: white;
+}
 #text_logo_header p{
+    padding-top: 20px;
     color: white;
 }
 
