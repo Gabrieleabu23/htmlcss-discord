@@ -109,7 +109,7 @@ header{
 
 }
 #text_logo_header h1{
-    font-size: 40px;
+    font-size: 48px;
     color: white;
 }
 #text_logo_header p{
@@ -169,7 +169,7 @@ button::before{
 }
 
 .violet{
-    background-color: #8ea1e1;
+    background-color: rgb(88, 101, 242);
     color: white;
 }
 /* FINE HEADER */
@@ -194,8 +194,7 @@ button::before{
 }
 
 .text_box h2{
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 45px;
 }
 .text_box p{
     padding-top: 10px;
@@ -358,5 +357,24 @@ h6{
 
 /* FINE FOOTER */
 
+li:hover{
+    text-decoration: underline;
+    color: white;
+}
+a .button.violet:hover{
+    box-shadow: 0 8px 15px rgba(0,0,0,.2);
+    background-color:hsl(235,calc(var(--saturation-factor, 1)*86.1%),71.8%);
+
+}
+a .button.white:hover{
+    box-shadow: 0 8px 15px rgba(0,0,0,.2);
+    color: #5865f2;
+}
+a button.black:hover{
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: hsl(223,6.7%,20.6%);
+    box-shadow: 0 8px 15px rgba(0,0,0,.2);
+    /* cursor: default; */
+}
 
 
